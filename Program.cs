@@ -4,11 +4,29 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Challenge 1
         Challenge_one one = new Challenge_one();
+        Console.WriteLine("\t\t\t\tChallenge 1:");
+        Console.WriteLine("Print numbers 1-10:");
+        one.PrintNumbers();
+        Console.WriteLine("\nPrint out each string that is sent:");
+        string[] arr = {"Hello", "Hi"};
+        one.PrintStrings(arr);
+        Console.WriteLine("\nCheck if number is positive, negative or 0:");
+        int number = -1;
+        one.CheckIfNumberIsPositiveOrNegative(number);
+
+        Console.WriteLine("\n");
+
+        // Challenge 2
         Challenge_two two = new Challenge_two();
+        Console.WriteLine("\t\t\t\tChallenge 2:");
+
+        Console.WriteLine("\n");
+        
+        // Challenge 3
         Challenge_three three = new Challenge_three();
-
-
+        Console.WriteLine("\t\t\t\tChallenge 3:");
         // validate some methods
         void ValidateRecursiveFactorial()
         {
