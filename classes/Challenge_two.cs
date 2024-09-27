@@ -1,6 +1,6 @@
 public class Challenge_two
 {
-    void GuessNumber()
+    public void GuessNumber()
     {
         int? secret = 0; // Assign the secret value
         int? guess = 0;
@@ -13,7 +13,7 @@ public class Challenge_two
         }
     }
 
-    void Fibonacci(int n)
+    public void Fibonacci(int n)
     {
         int a = 0, b = 1, c;
         Console.WriteLine($"{a} + {b} + ");
@@ -23,7 +23,7 @@ public class Challenge_two
         // b = c;
     }
 
-    void CheckIfNumberIsEvenOrOdd(double a, double b)
+    public void CheckIfNumberIsEvenOrOdd(double a, double b)
     {
         // Todo: Check if a number is even or odd
         // if the number is even, write out "even"
