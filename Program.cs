@@ -6,13 +6,13 @@ class Program
     {
         // Challenge 1
         Challenge_one one = new Challenge_one();
-        Console.WriteLine("\t\t\t\tChallenge 1:");
-        Console.WriteLine("Print numbers 1-10:");
+        Console.WriteLine("\t\t\t\t\t\tChallenge 1:");
+        Console.WriteLine("\t\tPrint numbers 1-10:");
         one.PrintNumbers();
-        Console.WriteLine("\nPrint out each string that is sent:");
+        Console.WriteLine("\n\t\tPrint out each string that is sent:");
         string[] arr = {"Hello", "Hi"};
         one.PrintStrings(arr);
-        Console.WriteLine("\nCheck if number is positive, negative or 0:");
+        Console.WriteLine("\n\t\tCheck if number is positive, negative or 0:");
         int number = -1;
         one.CheckIfNumberIsPositiveOrNegative(number);
 
@@ -20,13 +20,22 @@ class Program
 
         // Challenge 2
         Challenge_two two = new Challenge_two();
-        Console.WriteLine("\t\t\t\tChallenge 2:");
+        Console.WriteLine("\t\t\t\t\t\tChallenge 2:");
+        Console.WriteLine("\t\tGuess the number:");
+        two.GuessNumber();
+        Console.WriteLine("\n\t\tFibonacci sequence:");
+        int n = 9;
+        two.Fibonacci(n);
+        Console.WriteLine("\n\n\t\tIs number even or odd:");
+        double a = 3;
+        double b = 8;
+        two.CheckIfNumberIsEvenOrOdd(a, b);
 
         Console.WriteLine("\n");
         
         // Challenge 3
         Challenge_three three = new Challenge_three();
-        Console.WriteLine("\t\t\t\tChallenge 3:");
+        Console.WriteLine("\t\t\t\t\t\tChallenge 3:");
         // validate some methods
         void ValidateRecursiveFactorial()
         {
