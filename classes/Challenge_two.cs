@@ -32,7 +32,7 @@ public class Challenge_two
         for (int i = 0; i < n; i++)
         {
         	c = a + b;
-            Console.Write("{0} ", $"{c}");
+            Console.Write($"{c} ");
             a = b;
             b = c;
         }

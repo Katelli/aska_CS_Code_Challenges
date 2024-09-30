@@ -7,6 +7,29 @@ public class Challenge_three
     {
         // Todo: Implement fizzbuzz, if a number is divisible by 3: Fizz, if a number is divisible by 5: Buzz, if the number is divisible by both 3 and 5, FizzBuzz
         // https://www.geeksforgeeks.org/fizz-buzz-implementation/
+        int f = 20;
+        for(int i = 1; i <= f; i++)
+        {
+            if(i % 3 == 0 & i % 5 == 0)
+            {
+                // Fizzbuzz
+                Console.Write("Fizzbuzz ");
+            }
+            else if(i % 3 == 0)
+            {
+                // Fizz
+                Console.Write("Fizz ");
+            }
+            else if(i % 5 == 0)
+            {
+                // Buzz
+                Console.Write("Buzz ");
+            }
+            else
+            {
+                Console.Write($"{i} ");
+            }
+        }
     }
 
     public int RecursiveFactorial(int n)
@@ -18,13 +41,14 @@ public class Challenge_three
             return 1;
         }
         // n * Method(n - 1);
-        return n;
+        return n * RecursiveFactorial(n - 1);
     }
 
     public string ReverseString(string str)
     {
         // Todo: reverse the given string
         char[] charArray = str.ToCharArray();
-        return str;
+        Array.Reverse(charArray);
+        return new string(charArray);
     }
 }

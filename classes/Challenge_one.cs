@@ -19,22 +19,22 @@ public class Challenge_one
         }
     }
 
-    public void CheckIfNumberIsPositiveOrNegative(int number)
+    public void CheckIfNumberIsPositiveOrNegative(int n)
     {
         /*
         Todo: Check if a number is positive, negative or zero.
         */
-        if(number > 0)
+        if(n > 0)
         {
-            Console.WriteLine($"Number ({number}) is positive");
+            Console.WriteLine($"Number ({n}) is positive");
         }
-        else if (number < 0)
+        else if (n < 0)
         {
-            Console.WriteLine($"Number ({number}) is negative");
+            Console.WriteLine($"Number ({n}) is negative");
         }
-        else if(number == 0)
+        else if(n == 0)
         {
-            Console.WriteLine($"Number ({number}) is zero");
+            Console.WriteLine($"Number ({n}) is zero");
         }
     }
 
